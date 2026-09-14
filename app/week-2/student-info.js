@@ -4,7 +4,7 @@ export default function StudentInfo() {
   return (
     <p>
       Naod &middot;{" "}
-      <Link href="https://github.com/YOUR-USERNAME/cprg306-assignments">
+      <Link href="https://github.com/AlexG1-cell/cprg306-assignments">
         GitHub Repository
       </Link>
     </p>

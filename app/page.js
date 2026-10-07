@@ -1,4 +1,4 @@
-// Name: Alex Ghebremicael Assignment 4
+// Name: Alex Ghebremicael Assignment 5
 
 import Link from "next/link";
 
@@ -25,6 +25,12 @@ export default function Home() {
         className="rounded-full bg-foreground px-5 py-3 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc]"
       >
         Week 4 Assignment
+      </Link>
+      <Link
+        href="/week-5"
+        className="rounded-full bg-foreground px-5 py-3 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc]"
+      >
+        Week 5 Assignment
       </Link>
     </main>
   );

@@ -50,6 +50,12 @@ export default function Home() {
       >
         Week 8 Assignment
       </Link>
+      <Link
+        href="/week-9"
+        className="rounded-full bg-foreground px-5 py-3 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc]"
+      >
+        Week 9 Assignment
+      </Link>
     </main>
   );
 }

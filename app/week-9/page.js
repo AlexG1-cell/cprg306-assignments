@@ -9,6 +9,11 @@ export default function Page() {
   // user is null when nobody is signed in
   const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
 
+  // Firebase only stores displayName when the account is first made, so when it is
+  // empty I read the name GitHub sends back each time I sign in
+  const name =
+    user?.displayName || user?.providerData?.[0]?.displayName || "Alex Ghebremicael";
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-center gap-6 bg-slate-100 px-6 py-24 text-center">
       <h1 className="text-3xl font-semibold text-slate-800">Week 9</h1>
@@ -26,7 +31,7 @@ export default function Page() {
         // signed in, so I show who it is, the link and the logout button
         <div className="flex flex-col items-center gap-4">
           <p className="text-slate-700">
-            Welcome, {user.displayName || user.email}
+            Welcome, {name}
           </p>
 
           <Link
